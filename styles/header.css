@@ -1,0 +1,189 @@
+.header{
+    display: flex;
+    height: 57px;
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 100;
+}
+
+.left-side {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-menu {
+    height: 25px;
+    cursor: pointer;
+    margin-right: 24px;
+    margin-left: 24px;
+}
+
+.yt-logo {
+    height: 20px;
+    cursor: pointer;
+}
+
+
+.midddle-one {
+    flex: 1;
+    display: flex;
+    margin-left: 70px;
+    margin-right: 10px;
+    max-width: 500px;
+    align-items: center;
+    
+}
+
+.search-box {
+    height: 40px;
+    flex: 1;
+    width: 0;
+    border-radius: 2px;
+    min-width: 0;
+    padding-left: 12px;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    border: 1px solid #cccccc;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    box-shadow: inset 0px 1px 2px #eeeeee;
+    width: 0;
+    cursor: pointer;
+}
+
+.search-box::placeholder {
+    font-size: 16px;
+    font-family: Roboto, Arial;
+}
+
+.search-button {
+    height: 44px;
+    width: 66px;
+    background-color: #f7f7f7;
+    border: 1px solid #cccccc;
+    margin-left: -1px;
+    cursor: pointer;
+}
+
+.search-button,
+.voice-search-Button,
+.Create-Button,
+.youtube-app,
+.notification {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.search-button .tooltip,
+.voice-search-Button .tooltip,
+.Create-Button .tooltip,
+.youtube-app .tooltip,
+.notification .tooltip {
+    position: absolute;
+    font-family: Roboto, Arial;
+    background-color: rgba(96, 96, 96, 0.9);
+    color: white;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -40px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+
+.search-button:hover .tooltip,
+.voice-search-Button:hover .tooltip,
+.Create-Button:hover .tooltip,
+.youtube-app:hover .tooltip,
+.notification:hover .tooltip {
+    opacity: 1;
+}
+
+.search-icon {
+    height: 25px;
+    margin-top: 4px;
+ }
+
+.voice-search-Button {
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    margin-left: 10px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    transition: opacity 0.15s;
+
+}
+
+.right-side {
+    display: flex;
+    align-items: center;
+    width: 182px;
+    justify-content: space-between;
+    margin-right: 24px;
+    margin-left: 29px;
+    flex-shrink: 0;
+}
+
+.creat-icon {
+    height: 24px;
+    cursor: pointer;
+    
+    
+}
+
+.youtube-apps {
+    height: 24px;
+    cursor: pointer;
+}
+
+.notifications {
+    height: 24px;
+    cursor: pointer;
+}
+.notification {
+    position: relative;
+}
+.notify {
+    font-family: Roboto, Arial;
+    background-color: #cc0000;
+    border-radius: 80px;
+    position: absolute;
+    top: -3px;
+    right: -7px;
+    color: white;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    padding: 0 5px;
+    pointer-events: none;
+   
+}
+
+.my-channel {
+    height: 32px;
+    border-radius: 16px;
+    cursor: pointer;
+}
